@@ -1,0 +1,10 @@
+@mixin emblem($height, $width, $bottom, $left) {
+  border: dashed;
+  border-width: thin;
+  border-radius: 100%;
+
+  inline-size: $height;
+  block-size: $width;
+  bottom: $bottom;
+  left: $left;
+}

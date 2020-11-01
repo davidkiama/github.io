@@ -1,0 +1,32 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: garogier;
+  src: url(fonts/garogier.ttf);
+}
+
+@font-face {
+  font-family: cormorant_infant_light;
+  src: url(fonts/cormorantinfant-light.otf);
+}
+
+body {
+  font-family: "GothamSSm";
+  font-weight: normal;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

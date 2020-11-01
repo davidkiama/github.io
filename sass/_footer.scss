@@ -1,0 +1,52 @@
+.footer {
+  background: rgba(1, 16, 24, 0.99);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  flex: 20rem 1 1;
+
+  padding: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__address {
+  }
+
+  &__tel {
+    span {
+      display: block;
+    }
+  }
+}
+
+.emblem {
+  @include emblem(15rem, 15rem, auto, auto);
+  position: relative;
+  &__line {
+    @include emblem(10rem, 10rem, 15%, 15%);
+    position: absolute;
+    .dot {
+      line-height: 0;
+      position: absolute;
+      font-size: 4rem;
+      bottom: 56%;
+      left: 46%;
+
+      display: flex;
+      flex-direction: column;
+
+      &::before {
+        content: "";
+        height: 7rem;
+        width: 2px;
+        margin-left: 0.5rem;
+        display: block;
+        //background-color: currentColor;
+        background-image: linear-gradient(to right, #ebff00, #00ff87);
+
+        transform: translateY(6px);
+      }
+    }
+  }
+}
